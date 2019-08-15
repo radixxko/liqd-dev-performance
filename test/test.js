@@ -2,15 +2,15 @@ const PERF = require('../lib/performance.js');
 
 PERF(
 {
-    'prvy': () =>
+    'RAND': () =>
     {
         return Math.random();
     },
-    'druhy': () =>
+    'RAND * RAND': () =>
     {
         return Math.random() * Math.random();
     },
-    'treti': () =>
+    'RAND, RAND': () =>
     {
         return Math.random(), Math.random();
     }
